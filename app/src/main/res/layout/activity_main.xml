@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:id="@+id/titreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif-monospace"
+        android:text="MedicTime"
+        android:textColor="#000000"
+        android:textSize="34sp" />
+
+    <!-- Barre horizontale -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_below="@id/titreTextView"
+        android:layout_marginTop="8dp"/>
+
+    <ListView
+        android:id="@+id/listViewPrises"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+
+    <!-- Bouton rond d'ajout en bas à droite -->
+    <Button
+        android:id="@+id/ajouterButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/round_button"
+        app:backgroundTint="#4CAF50"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+</RelativeLayout>
+
+
+
+
+
+
